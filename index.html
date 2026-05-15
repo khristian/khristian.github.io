@@ -1,1 +1,311 @@
-hello
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Khristian Gaines — Senior Software Engineer</title>
+  
+  <meta
+    name="description"
+    content="Senior Software Engineer focused on backend architecture, automation, APIs, and integration-heavy systems."
+  />
+
+  <link rel="icon" href="/favicon.ico" />
+  
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #111821;
+      --panel-2: #161f2a;
+      --border: #273241;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --blue: #58a6ff;
+      --green: #3fb950;
+      --max: 1080px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      line-height: 1.55;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      background: rgba(13,17,23,.85);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 60px;
+    }
+
+    .brand { color: var(--blue); font-weight: 700; }
+    .navlinks { display: flex; gap: 20px; color: var(--muted); align-items: center; }
+
+    .icon-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .icon-link svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--muted);
+    }
+
+    .icon-link:hover svg {
+      fill: var(--text);
+    }
+
+    @media (max-width: 600px) {
+      .navlinks {
+        gap: 12px;
+        font-size: 0.9rem;
+      }
+    }
+
+    section { padding: 60px 0; border-top: 1px solid var(--border); }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      margin: 0;
+    }
+
+    .hero {
+      padding: 80px 0 40px;
+    }
+
+    .role { color: var(--muted); margin-top: 12px; }
+
+    .value {
+      margin-top: 24px;
+      max-width: 700px;
+      font-family: system-ui, sans-serif;
+      color: #c9d1d9;
+      font-size: 1.2rem;
+    }
+
+    .section-head {
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      margin-bottom: 20px;
+    }
+
+    .qa {
+      display: grid;
+      gap: 24px;
+      max-width: 800px;
+    }
+
+    .q {
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    .a {
+      font-family: system-ui, sans-serif;
+      color: #c9d1d9;
+    }
+
+    .projects {
+      display: grid;
+      gap: 28px;
+    }
+
+    .project {
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 12px;
+      background: var(--panel);
+    }
+
+    .project h3 { margin: 0 0 10px; color: var(--blue); }
+
+    .bullets {
+      margin-top: 10px;
+      font-family: system-ui, sans-serif;
+    }
+
+    .bullets li { margin-bottom: 6px; }
+
+    footer { padding: 40px 0; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <div class="brand">~/khristian</div>
+      <div class="navlinks">
+        <a href="#projects">projects</a>
+        <a href="#interview">interview</a>
+        <a href="#contact">contact</a>
+        <a href="Khristian_Gaines_Resume.pdf" target="_blank" rel="noopener">resume</a>
+        <a href="https://www.linkedin.com/in/khristiangaines/" target="_blank" rel="noopener">linkedin</a>
+        <a href="https://github.com/khristian" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+          <svg viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8a8.013 8.013 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.52 7.52 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+
+    <section class="hero">
+      <h1>Khristian Gaines</h1>
+      <div class="role">Senior Software Engineer · Systems & Backend</div>
+      <div class="a" style="margin-top:10px; color: var(--muted);">
+        Focused on backend architecture, automation, and integration-heavy systems.
+      </div>
+      <div class="value">
+        I build systems that turn messy inputs into structured, automated outcomes — across APIs, pipelines, and decision systems.
+      </div>
+      <div class="a" style="margin-top:14px; color: var(--muted);">
+        Currently exploring AI-assisted workflow systems and autonomous training analysis.
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-head">Projects</div>
+      <div class="projects">
+
+        <div class="project" style="background: #141d28;">
+          <h3>🚴 Cycling Coach Agent</h3>
+          <div class="a">AI system that automates training analysis, planning, and performance feedback using Intervals.icu data.</div>
+          <ul class="bullets">
+            <li>Runs daily, polling Intervals.icu to automatically ingest new ride data</li>
+            <li>Generates post-ride analysis and recommendations within ~30 minutes</li>
+            <li>Writes structured training sessions back to Intervals.icu based on athlete goals</li>
+            <li>Monitors workout execution and evaluates performance against planned targets</li>
+            <li>Replaced ad-hoc riding with structured, goal-driven training that adapts based on historical performance</li>
+          </ul>
+        </div>
+
+        <div class="project" style="background: #141d28;">
+          <h3>📧 Email Action Extraction</h3>
+          <div class="a">System that converts unstructured email into structured, actionable workflows with shared visibility.</div>
+          <ul class="bullets">
+            <li>Built ingestion pipeline (SES → S3 → Lambda → Postgres) for reliable email capture</li>
+            <li>Parses participants to extract tasks, owners, and follow-ups from variable email formats</li>
+            <li>Creates a shared dashboard of actions visible to all parties</li>
+            <li>Replaced manual email triage and task entry with automated, structured tracking</li>
+            <li>Enables clear ownership and follow-up by showing what’s done, by whom, and what’s pending</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="section-head">Core Stack & Focus Areas</div>
+      <div class="qa">
+        <div>
+          <div class="q">Core Stack</div>
+          <div class="a">Ruby on Rails · PostgreSQL · REST APIs · AWS · Python · Docker · Redis / Sidekiq · LLM APIs</div>
+        </div>
+
+        <div>
+          <div class="q">Focus Areas</div>
+          <div class="a">Backend Architecture · Automation · Integration-Heavy Systems · Data Pipelines · Workflow Systems · LLM-Powered Automation</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-head">Experience</div>
+      <div class="qa">
+        <div>
+          <div class="q">Principal Consultant · Faster Agile (2015–Present)</div>
+          <div class="a">Led delivery of backend systems and integrations across client teams. Defined architecture, built APIs and pipelines, and owned reliability in production.</div>
+          <ul class="bullets">
+            <li>Delivered 8–10 production systems across web, API, and integration-focused projects</li>
+            <li>Led engineers on IoT data pipeline initiatives involving AWS ingestion and telemetry processing</li>
+            <li>Built AWS-backed pipelines and APIs for data ingestion and processing</li>
+            <li>Owned end-to-end delivery from scoping to production support</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="q">Senior Rails Engineer · Best Buy (2022–2023)</div>
+          <div class="a">Built deployment tooling and integrations to support CI/CD and production change workflows.</div>
+          <ul class="bullets">
+            <li>Automated ServiceNow change requests for deployments</li>
+            <li>Enabled API-driven releases to AWS Kubernetes</li>
+            <li>Improved reliability and speed of production deployments</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="q">Senior Software Engineer · Dutchie / Leafly (2019–2022)</div>
+          <div class="a">Built and maintained APIs and integrations supporting product features and operational workflows.</div>
+          <ul class="bullets">
+            <li>Developed Rails APIs for menu and order integrations</li>
+            <li>Improved menu data accuracy by replacing brittle key/value lookups with regex-based parsing for POS-synced inventory and pricing</li>
+            <li>Reduced mismatches between in-store POS updates and web menu representation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="interview">
+      <div class="section-head">Interview</div>
+      <div class="qa">
+
+        <div>
+          <div class="q">What do you actually build?</div>
+          <div class="a">I build systems that sit between messy real-world inputs and clean outputs — APIs, pipelines, and automation layers that make things reliable.</div>
+        </div>
+
+        <div>
+          <div class="q">What kind of problems do you enjoy?</div>
+          <div class="a">Integration problems, data normalization, and systems that require both technical depth and product thinking.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-head">Contact</div>
+      <div class="qa">
+        <div>
+          <div class="q">Interested in working together?</div>
+          <div class="a">Email: <a href="mailto:khristian.gaines@gmail.com">khristian.gaines@gmail.com</a></div>
+          <div class="a">GitHub: <a href="https://github.com/khristian" target="_blank" rel="noopener">github.com/khristian</a></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wrap">
+    © 2026 Khristian Gaines
+  </footer>
+
+</body>
+</html>
