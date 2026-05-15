@@ -54,13 +54,24 @@
 
     nav {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 60px;
+      flex-direction: column;
+      gap: 6px;
+      padding: 12px 16px;
     }
 
-    .brand { color: var(--blue); font-weight: 700; }
-    .navlinks { display: flex; gap: 20px; color: var(--muted); align-items: center; }
+    .nav-brand { color: var(--blue); font-weight: 700; display: block; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 16px; color: var(--muted); align-items: center; }
+
+    @media (min-width: 640px) {
+      nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+        min-height: 60px;
+        padding: 0;
+      }
+    }
 
     .icon-link {
       display: inline-flex;
@@ -82,12 +93,6 @@
       fill: var(--text);
     }
 
-    @media (max-width: 600px) {
-      .navlinks {
-        gap: 12px;
-        font-size: 0.9rem;
-      }
-    }
 
     section { padding: 60px 0; border-top: 1px solid var(--border); }
 
@@ -187,8 +192,8 @@
 <body>
   <header>
     <nav class="wrap">
-      <div class="brand">~/khristian</div>
-      <div class="navlinks">
+      <span class="nav-brand">~/khristian</span>
+      <div class="nav-links">
         <a href="#projects">projects</a>
         <a href="#interview">interview</a>
         <a href="#contact">contact</a>
