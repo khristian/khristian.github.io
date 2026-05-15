@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <title>Khristian Gaines — Senior Software Engineer</title>
-  
+  <title>Khristian Gaines — Senior Software Engineer &amp; Technical Founder</title>
+
   <meta
     name="description"
-    content="Senior Software Engineer focused on backend architecture, automation, APIs, and integration-heavy systems."
+    content="Senior Software Engineer and Technical Founder with 10+ years building backend systems, APIs, and AI-powered automation. Washington DC. Open to full-time and consulting roles."
   />
 
   <link rel="icon" href="/favicon.ico" />
@@ -155,6 +155,33 @@
     .bullets li { margin-bottom: 6px; }
 
     footer { padding: 40px 0; color: var(--muted); }
+
+    .status-badge {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.78rem;
+      color: #3a7d44;
+      background: #e8f5eb;
+      border-radius: 3px;
+      padding: 3px 8px;
+    }
+
+    .edu-entry {
+      display: grid;
+      gap: 2px;
+      margin-bottom: 16px;
+    }
+
+    .edu-entry strong {
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    .edu-entry span {
+      font-family: system-ui, sans-serif;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
@@ -167,7 +194,7 @@
         <a href="#contact">contact</a>
         <a href="Khristian_Gaines_Resume.pdf" target="_blank" rel="noopener">resume</a>
         <a href="https://www.linkedin.com/in/khristiangaines/" target="_blank" rel="noopener">linkedin</a>
-        <a href="https://github.com/khristian" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+        <a href="https://github.com/khristiangaines" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
           <svg viewBox="0 0 16 16">
             <path d="M8 0C3.58 0 0 3.58 0 8a8.013 8.013 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.52 7.52 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
           </svg>
@@ -180,7 +207,8 @@
 
     <section class="hero">
       <h1>Khristian Gaines</h1>
-      <div class="role">Senior Software Engineer · Systems & Backend</div>
+      <div class="role">Senior Software Engineer · 10+ Years · Technical Founder</div>
+      <span class="status-badge">● Open to full-time &amp; consulting roles</span>
       <div class="a" style="margin-top:10px; color: var(--muted);">
         Focused on backend architecture, automation, and integration-heavy systems.
       </div>
@@ -188,7 +216,7 @@
         I build systems that turn messy inputs into structured, automated outcomes — across APIs, pipelines, and decision systems.
       </div>
       <div class="a" style="margin-top:14px; color: var(--muted);">
-        Currently exploring AI-assisted workflow systems and autonomous training analysis.
+        Building and shipping AI-native workflow tools — including a deployed agentic coaching system and an email intelligence pipeline running in production.
       </div>
     </section>
 
@@ -241,8 +269,8 @@
       <div class="section-head">Experience</div>
       <div class="qa">
         <div>
-          <div class="q">Principal Consultant · Faster Agile (2015–Present)</div>
-          <div class="a">Led delivery of backend systems and integrations across client teams. Defined architecture, built APIs and pipelines, and owned reliability in production.</div>
+          <div class="q">Cofounder &amp; Principal Consultant · Faster Agile (2011–Present)</div>
+          <div class="a">Cofounded a technical consulting firm in 2011. Lead architecture, client delivery, and engineering across web, API, cloud, and AI-powered projects. Available for new client engagements.</div>
           <ul class="bullets">
             <li>Delivered 8–10 production systems across web, API, and integration-focused projects</li>
             <li>Led engineers on IoT data pipeline initiatives involving AWS ingestion and telemetry processing</li>
@@ -262,14 +290,49 @@
         </div>
 
         <div>
-          <div class="q">Senior Software Engineer · Dutchie / Leafly (2019–2022)</div>
-          <div class="a">Built and maintained APIs and integrations supporting product features and operational workflows.</div>
+          <div class="q">Senior Software Engineer · Dutchie (2021–2022)</div>
+          <div class="a">Built back-end APIs and integrations on a cannabis POS and e-commerce platform serving dispensaries nationwide.</div>
           <ul class="bullets">
-            <li>Developed Rails APIs for menu and order integrations</li>
-            <li>Improved menu data accuracy by replacing brittle key/value lookups with regex-based parsing for POS-synced inventory and pricing</li>
+            <li>Developed Rails APIs for menu and order syncing with POS systems</li>
+            <li>Improved menu data accuracy by replacing brittle key/value lookups with regex-based parsing</li>
             <li>Reduced mismatches between in-store POS updates and web menu representation</li>
+            <li>Supported feature rollout strategies using feature flags across a distributed system</li>
           </ul>
         </div>
+
+        <div>
+          <div class="q">Senior Software Engineer · Leafly (2019–2021)</div>
+          <div class="a">Served as senior member of the engineering team delivering customer-facing features on one of the largest cannabis marketplaces.</div>
+          <ul class="bullets">
+            <li>Refactored legacy Ruby on Rails code to reduce tech debt using current best practices</li>
+            <li>Created and maintained API endpoints enabling new internal and external product features</li>
+            <li>Collaborated with external engineers to build new menu and order integrations</li>
+            <li>Mentored junior engineers and provided level-of-effort estimates to product managers</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="q">Software Engineer · Allovue (2014–2015)</div>
+          <div class="a">First engineering hire at an education resource-planning startup serving K–12 schools and districts.</div>
+          <ul class="bullets">
+            <li>Oversaw selection and integration of Elasticsearch with a Ruby on Rails backend</li>
+            <li>Built ETL process to ingest inconsistent district data into PostgreSQL and index into Elasticsearch</li>
+            <li>Built RESTful API in Rails backing an Ember.js frontend</li>
+            <li>Automated Docker container deployment using Ansible</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-head">Education</div>
+      <div class="edu-entry">
+        <strong>Certificate in Entrepreneurship</strong>
+        <span>Harvard Business School Executive Education</span>
+      </div>
+      <div class="edu-entry">
+        <strong>B.S. Mechanical Engineering</strong>
+        <span>University of Maryland, College Park</span>
       </div>
     </section>
 
@@ -296,7 +359,8 @@
         <div>
           <div class="q">Interested in working together?</div>
           <div class="a">Email: <a href="mailto:khristian.gaines@gmail.com">khristian.gaines@gmail.com</a></div>
-          <div class="a">GitHub: <a href="https://github.com/khristian" target="_blank" rel="noopener">github.com/khristian</a></div>
+          <div class="a">GitHub: <a href="https://github.com/khristiangaines" target="_blank" rel="noopener">github.com/khristiangaines</a></div>
+          <div class="a">LinkedIn: <a href="https://www.linkedin.com/in/khristiangaines/" target="_blank" rel="noopener">linkedin.com/in/khristiangaines</a></div>
         </div>
       </div>
     </section>
